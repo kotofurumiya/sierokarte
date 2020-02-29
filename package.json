@@ -1,7 +1,7 @@
 {
   "name": "sierokarte",
   "version": "1.0.0",
-  "description": "",
+  "description": "グラブル公式ニュースをDiscordへ通知するbot",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

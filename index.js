@@ -41,7 +41,11 @@ async function main() {
 };
 
 app.get('/', (req, res) => {
-  main().then(() => res.sendStatus(200));
+  main().then(() => res.sendStatus(200))
+        .catch((e) => {
+          console.error(e);
+          res.sendStatus(500);
+        });
 });
 
 const port = process.env.PORT || 8080;
